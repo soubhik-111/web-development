@@ -1,0 +1,124 @@
+@media (max-width: 1200px) {
+  .intro-text > h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+  .intro-text-desc {
+    font-size: 0.8rem;
+    font-weight: 300;
+    word-spacing: 0.1rem;
+  }
+  .review-form {
+    padding: 1rem;
+  }
+  .user-review-container {
+    max-width: 90%;
+    gap: 1rem;
+  }
+  .user-review-container > div {
+    width: 100%;
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .intro-text > h1 {
+    font-size: 2.3rem;
+    margin: 0.5rem 0;
+  }
+  .cta-button {
+    width: 90%;
+  }
+  .review-form > h3 {
+    font-size: 1.5rem;
+  }
+  .footer-link {
+    height: 100%;
+    width: 100%;
+    min-height: 13rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    display: none;
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    transition: all 0.5s ease;
+  }
+  .nav-menu li:hover {
+    text-decoration: none;
+    transform: translateX(10px);
+  }
+
+  #nav-label {
+    display: block;
+  }
+  .hero {
+    margin-top: 60px;
+  }
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .intro-text {
+    padding-right: 0;
+  }
+
+  .intro-image-container {
+    margin-top: 20px;
+  }
+
+  .user-review-container {
+    max-width: 90%;
+    gap: 1rem;
+  }
+  .review-form {
+    padding: 1rem;
+  }
+  .model-content {
+    max-width: 90%;
+  }
+  .user-review-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-cp-info {
+    flex-direction: column;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    font-size: 2rem !important;
+  }
+  .subtitle {
+    font-size: 1rem !important;
+  }
+  .footer-logo-info > span {
+    font-size: 2rem;
+  }
+  .footer-logo-info > img {
+    max-height: 50px;
+  }
+}
