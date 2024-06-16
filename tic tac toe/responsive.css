@@ -1,0 +1,65 @@
+@media only screen and (max-width:500px) {
+    ul>li{
+        font-size: 1.5rem;
+    }
+    #heading{
+        font-size: 1.5rem;
+        max-height: 10vh;
+    }
+    .btn-container button {
+        font-size: 1rem;
+    }
+    .popup-container{
+        max-width: 85%;
+        
+    }
+    .pop-bar{
+        padding:15px;
+    }
+    .pop-title{
+        font-size: 1.3rem;
+    }
+    .popup-container{
+        height: auto;
+    }
+    .pop-main{
+        font-size: 1rem;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px 0;
+        gap: 15px;
+    }
+    .pop-main>p{
+        margin: 0;
+    }
+    #cross{
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    #pop-text{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .btn-container{
+        margin-bottom: 15px;
+    }
+    .btn-container>button{
+        max-width: 100%;
+        padding: 5px 15px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    #game-container{
+        flex-direction: column;
+    }
+    #scoreboard-container{
+        width: 100%;
+        padding: 5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

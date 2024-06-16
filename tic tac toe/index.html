@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <ul>
+        <li>Crazy Tic Tac Toe <img src="/assets/board-icon.png" id="nav-icon" height="30px" alt=""></li>
+    </ul>
+    <div id="game-container">
+        <main id="main-game-container">
+            <h1 id="heading"><span>Tic Tac Toe</span></h1>
+            <h2 id="turn">Current Turn: <span id="current-turn"></span></h2>
+            <div id="main">
+                <div class="container">
+                    <div class="board" id="_0"></div>
+                    <div class="board" id="_1"></div>
+                    <div class="board" id="_2"></div>
+                    <div class="board" id="_3"></div>
+                    <div class="board" id="_4"></div>
+                    <div class="board" id="_5"></div>
+                    <div class="board" id="_6"></div>
+                    <div class="board" id="_7"></div>
+                    <div class="board" id="_8"></div>
+                </div>
+            </div>
+            <div class="board-btn">
+                <button onclick="reset()">Reset</button>
+                <button onclick="restart()">Restart</button>
+            </div>
+            <div id="gameOver">
+                <div class="popup-container">
+                    <div class="pop-bar">
+                        <span class="pop-title">Tic Tac Toe</span>
+                        <i class="fa-solid fa-xmark" id="cross" onclick="closePopUP()"></i>
+                    </div>
+                    <div class="pop-main">
+                        <p id="pop-text">Thanks For Playing</p>
+                        <p id="pop-text-over">Game Over</p>
+                        <p id="pop-text-congo">Congratulations <br><span id="player"></span> won</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="resetBoard">
+                <div class="popup-container">
+                    <div class="pop-bar">
+                        <span class="pop-title">Tic Tac Toe</span>
+                    </div>
+                    <p class="reset-pop-main pop-main">Current game will reset</p>
+                    <div class="btn-container">
+                        <button onclick="replay()">Reset</button>
+                        <button onclick="closeWarningPopUP()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main id="scoreboard-container">
+            <table class="scoreboard">
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th id="player1"><span id="player1Name">Player 1</span> <img id="player1Icon" src="/assets/edit-icon.png" height="20px" alt=""></th>
+                        <th id="player2"><span id="player2Name">Player 2</span> <img id="player2Icon" src="/assets/edit-icon.png" height="20px" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>14</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>8</td>
+                        <td>11</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>32</td> <!-- Sum of Player 1's scores -->
+                        <td>32</td> <!-- Sum of Player 2's scores -->
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4f4f6e8374.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
