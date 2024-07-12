@@ -1,0 +1,150 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.App {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background: #282c34;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #61dafb;
+    color: white;
+    cursor: pointer;
+}
+
+header button:hover {
+    background: #21a1f1;
+}
+
+/* Current location styles */
+section {
+    padding: 20px;
+    margin-top: 100px; /* Adjust according to header height */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Hourly section styles */
+.hourly-forecast {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.hour {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    min-width: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hour p {
+    margin-bottom: 5px;
+}
+
+/* Daily section styles */
+.daily-forecast {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.day {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    min-width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.day p {
+    margin-bottom: 5px;
+}
+
+/* Overview styles */
+.yearly-overview {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Error component styles */
+.error {
+    background: #ffcccb;
+    color: #d8000c;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error span {
+    flex: 1;
+}
+
+.error button {
+    background: none;
+    border: none;
+    color: #d8000c;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

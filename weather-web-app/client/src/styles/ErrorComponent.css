@@ -1,0 +1,22 @@
+.error {
+    background: #ffcccb;
+    color: #d8000c;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error span {
+    flex: 1;
+}
+
+.error button {
+    background: none;
+    border: none;
+    color: #d8000c;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,39 @@
+header {
+    background: #282c34;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #61dafb;
+    color: white;
+    cursor: pointer;
+}
+
+header button:hover {
+    background: #21a1f1;
+}
